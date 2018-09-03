@@ -6,7 +6,10 @@
 
 body {
 	@include bodyBackground();
-	background-color: $backgroundColor;
+  font-family: $mainFont;
+  line-height: 1.35;
+  font-size: $mainFontSize;
+  color: $gdiDarkGray;
 }
 
 .reveal {

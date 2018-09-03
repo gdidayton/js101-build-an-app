@@ -1,12 +1,30 @@
 // Base settings for all themes that can optionally be
 // overridden by the super-theme
 
+// Fonts
+@font-face {
+  font-family: 'Gotham-Round';
+  src: local('Gotham-Round'), url("../fonts/gothamrnd-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// GDI brand colors
+$gdiPink: #f05b62;
+$gdiDarkBlue: #2a4758;
+$gdiEarthYellow: #d8ae64;
+$gdiMauve: #a05258;
+$gdiDarkGray: #333;
+
+// Progress Bar
+$lightBlue: #01a9b4;
+
 // Background of the presentation
-$backgroundColor: #2b2b2b;
+$backgroundColor: #fff;
 
 // Primary/body text
-$mainFont: 'Lato', sans-serif;
-$mainFontSize: 40px;
+$mainFont: 'Gotham-Round', sans-serif;
+$mainFontSize: 30px;
 $mainColor: #eee;
 
 // Vertical spacing between blocks of text
@@ -14,14 +32,19 @@ $blockMargin: 20px;
 
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
-$headingFont: 'League Gothic', Impact, sans-serif;
-$headingColor: #eee;
-$headingLineHeight: 1.2;
-$headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingFont: 'Gotham-Round', sans-serif;
+$headingColor: $gdiPink;
+$headingLineHeight: 1;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: none;
 $headingTextShadow: none;
 $headingFontWeight: normal;
 $heading1TextShadow: $headingTextShadow;
+$step-size-heading: 0.33333;
+@mixin heading-size($size) {
+  font-size: $size * $step-size-heading + em;
+}
+
 
 $heading1Size: 3.77em;
 $heading2Size: 2.11em;
@@ -31,6 +54,10 @@ $heading4Size: 1.00em;
 // Links and actions
 $linkColor: #13DAEC;
 $linkColorHover: lighten( $linkColor, 20% );
+
+// Navigation
+$navigationArrowColor: $gdiPink;
+$navigationArrowHover: #53555C;
 
 // Text selection
 $selectionBackgroundColor: #FF5E99;

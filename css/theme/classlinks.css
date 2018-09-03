@@ -1,36 +1,33 @@
-/**
- * Blood theme for reveal.js
- * Author: Walther http://github.com/Walther
- *
- * Designed to be used with highlight.js theme
- * "monokai_sublime.css" available from
- * https://github.com/isagalaev/highlight.js/
- *
- * For other themes, change $codeBackground accordingly.
- *
- */
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
+@font-face {
+  font-family: 'Gotham-Round';
+  src: local("Gotham-Round"), url("../fonts/gothamrnd-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #222;
-  background-color: #222; }
+  background: #fff;
+  font-family: "Gotham-Round", sans-serif;
+  line-height: 1.35;
+  font-size: 30px;
+  color: #333; }
 
 .reveal {
-  font-family: Ubuntu, "sans-serif";
-  font-size: 40px;
+  font-family: "Gotham-Round", sans-serif;
+  font-size: 30px;
   font-weight: normal;
   color: #eee; }
 
 ::selection {
   color: #fff;
-  background: #a23;
+  background: #FF5E99;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: #a23;
+  background: #FF5E99;
   text-shadow: none; }
 
 .reveal .slides section,
@@ -48,13 +45,13 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eee;
-  font-family: Ubuntu, "sans-serif";
+  color: #f05b62;
+  font-family: "Gotham-Round", sans-serif;
   font-weight: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 2px #222;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  text-shadow: none;
   word-wrap: break-word; }
 
 .reveal h1 {
@@ -70,7 +67,7 @@ body {
   font-size: 1em; }
 
 .reveal h1 {
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); }
+  text-shadow: none; }
 
 /*********************************************
  * OTHER
@@ -212,20 +209,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #a23;
+  color: #13DAEC;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #dd5566;
+  color: #71e9f4;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #6a1520; }
+  background: #0d99a5; }
 
 /*********************************************
  * IMAGES
@@ -247,21 +244,21 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #a23;
+  border-color: #13DAEC;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #a23; }
+  color: #13DAEC; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #a23; }
+  color: #13DAEC; }
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -273,24 +270,50 @@ body {
  *********************************************/
 @media print {
   .backgrounds {
-    background-color: #222; } }
+    background-color: #fff; } }
 
-.reveal p {
-  font-weight: 300;
-  text-shadow: 1px 1px #222; }
+.classlinks {
+  width: 75%;
+  margin: 0 auto;
+  padding: 3.5em;
+  min-height: 40em; }
+  .classlinks header {
+    clear: both;
+    margin-bottom: 2em; }
+    .classlinks header h1 {
+      padding-top: 25px; }
+  .classlinks .gdi-dayton-logo {
+    float: left;
+    width: 8em;
+    padding-right: 2em; }
+  .classlinks h1, .classlinks h2 {
+    color: #f05b62; }
+  .classlinks h1 {
+    font-size: 1.66665em; }
+  .classlinks h2 {
+    font-size: 0.66666em;
+    padding: 0 0.5em; }
+  .classlinks p, .classlinks li {
+    font-size: 0.55em; }
+    .classlinks p a:link, .classlinks li a:link {
+      color: #22867F;
+      text-decoration: none;
+      border-bottom: 1px solid #22867F; }
+    .classlinks p a:visited, .classlinks li a:visited {
+      color: #22867F; }
+    .classlinks p a:hover, .classlinks li a:hover {
+      color: #F05B62;
+      border-bottom: 1px dashed #F05B62; }
+    .classlinks p a:active, .classlinks li a:active {
+      color: #ffffff; }
+  .classlinks .column {
+    width: 25%;
+    min-height: 350px;
+    float: left; }
+    .classlinks .column li {
+      padding-top: 0.2em;
+      padding-bottom: 0.1em; }
 
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-  font-weight: 700; }
-
-.reveal p code {
-  background-color: #23241f;
-  display: inline-block;
-  border-radius: 7px; }
-
-.reveal small code {
-  vertical-align: baseline; }
+.copyright {
+  font-size: 0.55em;
+  text-align: center; }
