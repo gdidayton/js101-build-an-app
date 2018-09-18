@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Intro to JavaScript Class 3 - Girl Develop It</title>
+    <meta name="author" content="Girl Develop It">
+
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/classlinks.css">
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section data-markdown="slides/class4/slide1__title.md"></section>
+
+        <!-- Review: Role of HTML v. CSS-->
+        <section data-markdown="slides/class4/slide2__anatomy-of-website.md"></section>
+        <section data-markdown="slides/class4/slide3__dom-tree.md"></section>
+        <section data-markdown="slides/class4/slide4__dom-structure.md"></section>
+
+        <!--Accessing the DOM-->
+        <section data-markdown="slides/class4/slide5__dom-access.md"></section>
+        <section data-markdown="slides/class4/slide6__ids-vs-classes.md"></section>
+        <section data-markdown="slides/class4/slide7__dom-access-by-id.md"></section>
+        <section data-markdown="slides/class4/slide8__dom-access-by-tag.md"></section>
+        <section data-markdown="slides/class4/slide9__query-selector.md"></section>
+        <section data-markdown="slides/class4/slide10__LDI-accessing-dom.md"></section>
+        <section data-markdown="slides/class4/slide11__LDI-accessing-dom-answer.md"></section>
+
+        <!--Manipulating the DOM-->
+        <section data-markdown="slides/class4/slide12__changing-nodes.md"></section>
+        <section data-markdown="slides/class4/slide13__get-set-attributes.md"></section>
+        <section data-markdown="slides/class4/slide14__LDI-set-attribute.md"></section>
+        <section data-markdown="slides/class4/slide15__LDI-set-attribute-answer.md"></section>
+        <section data-markdown="slides/class4/slide16__innerHTML.md"></section>
+        <section data-markdown="slides/class4/slide17__innerHTML-element.md"></section>
+        <section data-markdown="slides/class4/slide18__LDI-change-nodes.md"></section>
+        <section data-markdown="slides/class4/slide19__LDI-change-nodes-answer.md"></section>
+        <section data-markdown="slides/class4/slide20__LDI-bringing-things-together.md"></section>
+        <section data-markdown="slides/class4/slide21__LDI-bringing-things-together-answer.md"></section>
+
+        <!-- Events -->
+        <section data-markdown="slides/class4/slide22__events.md"></section>
+        <section data-markdown="slides/class4/slide23__types-of-events.md"></section>
+        <section data-markdown="slides/class4/slide24__call-events-html.md"></section>
+        <section data-markdown="slides/class4/slide25__call-events-js.md"></section>
+        <section data-markdown="slides/class4/slide26__LDI-event-listeners.md"></section>
+
+        <!-- Finishing Our App -->
+        <section data-markdown="slides/class4/slide27__LDI-event-listeners-answer.md"></section>
+        <section data-markdown="slides/class4/slide28__iterating-through-dogs.md"></section>
+        <section data-markdown="slides/class4/slide29__iterating-through-dogs-solution.md"></section>
+        <section data-markdown="slides/class4/slide30__iterating-through-dogs-answer.md"></section>
+        <section data-markdown="slides/class4/slide31__creating-the-loop.md"></section>
+        <section data-markdown="slides/class4/slide32__creating-the-loop-challenge.md"></section>
+        <section data-markdown="slides/class4/slide33__creating-the-loop-solution.md"></section>
+        <section data-markdown="slides/class4/slide34__creating-the-loop-solution-2.md"></section>
+        <section data-markdown="slides/class4/slide35__creating-the-loop-answer.md"></section>
+        <section data-markdown="slides/class4/slide36__get-previous-dog.md"></section>
+        <section data-markdown="slides/class4/slide37__get-previous-dog-answer.md"></section>
+        <section data-markdown="slides/class4/slide38__cleaning-up-event-listeners.md"></section>
+        <section data-markdown="slides/class4/slide39__cleaning-up-init.md"></section>
+        <section data-markdown="slides/class4/slide40__the-final-app.md"></section>
+        <section data-markdown="slides/class4/slide41__you-did-it.md"></section>
+
+      </div>
+      <footer>
+      <div class="copyright">
+        Intro to JavaScript &mdash; Girl Develop It &mdash;
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+      </div>
+    </footer>
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../notes/notes.js' }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

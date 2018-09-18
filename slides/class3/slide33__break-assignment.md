@@ -2,9 +2,16 @@
 
 Remember those dog gifs we had you save?
 
-- Create four more objects for different dogs
-  - Give them different names, ages, and tricks
+- Create an array of objects called `dogs`
+- Each object inside the array should have four properties
+  - `name`
+  - `age`
+  - `photoUrl`
+  - `tricks`
 
-- Add a property for each dog called `photoUrl` and add a link to a gif (saved as a string) for each one.
+- `name`, `age`, and `tricks` we've seen before and should be self-explanatory.
+- `photoUrl` should contain a link to one of your dog gifs (saved as a string).
+- You should create **5** objects.
+
 
 ![how to copy gif url](lib/img/giphy-link.gif)
