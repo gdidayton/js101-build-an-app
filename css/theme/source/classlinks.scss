@@ -4,77 +4,85 @@
 @import "../template/theme";
 // ---------------------------------------------
 
-.classlinks {
-    width: 75%;
-    margin: 0 auto;
-    padding: 3.5em;
-    min-height: 40em;
+.home {
+  width: 75%;
+  margin: 0 auto;
+  padding: 3.5em;
 
-    header {
-        clear: both;
-        margin-bottom: 2em;
-        h1 {
-            padding-top: 25px;
-        }
-    }
+  &__title {
+    height: 8em;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+  }
 
-    .gdi-dayton-logo {
-        float: left;
-        width: 8em;
-        padding-right: 2em;
-    }
+  .gdi-dayton-logo {
+    float: left;
+    width: 8em;
+    padding-right: 2em;
+  }
 
-    h1, h2 {
-        color: $gdiPink;
-    }
+  h1, h2 {
+    color: $gdiPink;
+  }
 
-    h1 {
-        @include heading-size(5);
-    }
+  h1 {
+    @include heading-size(6);
+    height: 1.5em;
+    margin: 0px;
+  }
 
+  h2 {
+    @include heading-size(4);
+    margin: 0px;
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a:link {
+    color: #22867F;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #22867F;
+  }
+
+  a:hover {
+    color: #F05B62;
+  }
+
+  a:active {
+    color: #ffffff;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__classes {
+    width: 65%;
     h2 {
-        @include heading-size(2);
-        padding: 0 0.5em;
+      margin-bottom: 0.5em;
     }
+  }
 
-    p, li {
-        font-size: 0.55em;
-
-        a:link {
-            color: #22867F;
-            text-decoration: none;
-            border-bottom: 1px solid #22867F;
-        }
-
-        a:visited {
-            color: #22867F;
-        }
-
-        a:hover {
-            color: #F05B62;
-            border-bottom: 1px dashed #F05B62;
-        }
-
-        a:active {
-            color: #ffffff;
-        }
-    }
-
-    .column {
-        width: 25%;
-        min-height: 350px;
-        float: left;
-
-        li {
-            padding-top: 0.2em;
-            padding-bottom: 0.1em;
-        }
-    }
+  &__resources {
+    width: 30%;
+  }
 }
 
 .copyright {
-    font-size: 0.55em;
-    text-align: center;
+  font-size: 0.55em;
+  text-align: center;
 }
 
 .col1 {
