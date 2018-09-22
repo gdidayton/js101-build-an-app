@@ -4,4 +4,4 @@ Now, in order to run your application, just call the init function at the bottom
 
 ### Dog Carousel App
 
-[http://bit.ly/js101-app-full](https://codepen.io/k80bowman/pen/oPMRKM?editors=0010)
+[http://bit.ly/js101-app-full](https://codepen.io/k80bowman/pen/JajvKW)
